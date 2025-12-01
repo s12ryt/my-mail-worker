@@ -2,9 +2,8 @@ name: Deploy to Cloudflare Workers
 
 on:
   push:
-    branches:
-      - main  # 或者 master，看你的主分支叫什麼
-
+    branches: [ main ]
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
