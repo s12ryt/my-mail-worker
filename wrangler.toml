@@ -1,4 +1,4 @@
-name = "netlib-mail"
+name = "yoyo-mail"
 main = "src/index.js"
 compatibility_date = "2025-12-01"
 
