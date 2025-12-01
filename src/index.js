@@ -4,9 +4,9 @@
  */
 
 // === 🔧 配置區域 ===
-const JWT_SECRET = "d9Cr9NZcxWQ0TCRGJZNFCfe0adfGbW"; 
-const SALT = "2VRfp25K64TRjVottCCTGeMfAD5tt7"; 
-const EMAIL_DOMAIN = "xn--doqx38lgecsvq.netlib.re"; 
+const JWT_SECRET = "請放隨機數"; 
+const SALT = "請放隨機數"; 
+const EMAIL_DOMAIN = "yourdomain.com"; 
 // =================
 
 export default {
