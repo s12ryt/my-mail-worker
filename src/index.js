@@ -4,9 +4,9 @@
  */
 
 // === 🔧 配置區域 ===
-const JWT_SECRET = "請放隨機數"; 
-const SALT = "請放隨機數"; 
-const EMAIL_DOMAIN = "yourdomain.com"; 
+///const JWT_SECRET = "請放隨機數"; 
+///const SALT = "請放隨機數"; 
+//const EMAIL_DOMAIN = "yourdomain.com"; 
 // =================
 
 export default {
