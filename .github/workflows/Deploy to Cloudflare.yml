@@ -1,0 +1,34 @@
+name: Deploy to Cloudflare Workers
+
+on:
+  push:
+    branches:
+      - main  # 或者 master，看你的主分支叫什麼
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # 這裡告訴 Wrangler要把哪些 GitHub Secrets 傳送給 Worker
+          secrets: |
+            JWT_SECRET
+            SALT
+            EMAIL_DOMAIN
+            TG_BOT_TOKEN
+            TG_CHAT_ID
+        env:
+          # 這裡將 GitHub Secrets 映射到環境變量
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          SALT: ${{ secrets.SALT }}
+          EMAIL_DOMAIN: ${{ secrets.EMAIL_DOMAIN }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
