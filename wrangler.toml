@@ -1,6 +1,6 @@
 name = "netlib-mail"
 main = "src/index.js"
-compatibility_date = "2024-04-05"
+compatibility_date = "2025-12-01"
 
 # D1 綁定 (ID 必須填寫正確)
 [[d1_databases]]
