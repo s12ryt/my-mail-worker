@@ -1,21 +1,14 @@
-name = "yoyo-mail"
+name = "netlib-mail"
 main = "src/index.js"
-compatibility_date = "2025-12-1"
+compatibility_date = "2024-04-05"
 
-# 1. 綁定 D1 數據庫
+# D1 綁定 (ID 必須填寫正確)
 [[d1_databases]]
 binding = "DB"
 database_name = "MAIL_DB"
-database_id = "請替換成你的_D1_DATABASE_ID"
+database_id = "你的_D1_DATABASE_ID"  # <--- 這裡要寫死 ID，這不算敏感信息
 
-# 2. 綁定 KV 命名空間
+# KV 綁定 (ID 必須填寫正確)
 [[kv_namespaces]]
 binding = "USER_KV"
-id = "請替換成你的_KV_NAMESPACE_ID"
-
-# 3. 環境變數 (這裡放不敏感的配置)
-[vars]
-EMAIL_DOMAIN = "yourdomain.com"
-
-# 注意：敏感密鑰 (JWT_SECRET, SALT, TG_TOKEN) 
-# 建議使用 `npx wrangler secret put` 指令設置，或者直接寫死在 index.js 裡
+id = "你的_KV_NAMESPACE_ID"        # <--- 這裡要寫死 ID
