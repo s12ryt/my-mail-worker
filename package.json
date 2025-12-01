@@ -1,0 +1,15 @@
+{
+  "name": "my-mail-worker",
+  "version": "1.0.0",
+  "description": "這算是我無聊搞得東西 使用google gemini 3 pro生成",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postal-mime": "^2.6.1"
+  }
+}
