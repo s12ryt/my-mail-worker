@@ -1,6 +1,6 @@
 name = "yoyo-mail"
 main = "src/index.js"
-compatibility_date = "2024-04-05"
+compatibility_date = "2025-12-1"
 
 # 1. 綁定 D1 數據庫
 [[d1_databases]]
@@ -15,7 +15,7 @@ id = "請替換成你的_KV_NAMESPACE_ID"
 
 # 3. 環境變數 (這裡放不敏感的配置)
 [vars]
-EMAIL_DOMAIN = "xn--doqx38lgecsvq.netlib.re"
+EMAIL_DOMAIN = "yourdomain.com"
 
 # 注意：敏感密鑰 (JWT_SECRET, SALT, TG_TOKEN) 
 # 建議使用 `npx wrangler secret put` 指令設置，或者直接寫死在 index.js 裡
